@@ -1,4 +1,4 @@
-FROM openjdk:11-jdk-slim-buster
+FROM openjdk:11.0.11-jdk-slim-buster
 COPY springwebdemo.jar /usr/local/
 WORKDIR /usr/local
 CMD java -jar springwebdemo.jar
@@ -6,7 +6,7 @@ CMD java -jar springwebdemo.jar
 #ARG JAR_NAME
 #ENV PROJECT_NAME ${JAR_NAME}
 #ENV PROJECT_HOME /usr/local/${PROJECT_NAME}
-#
+# docker pull openjdk:11.0.11-jdk-slim-buster
 #RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 #RUN echo 'Asia/Shanghai' >/etc/timezone
 #RUN mkdir $PROJECT_HOME && mkdir $PROJECT_HOME/logs
