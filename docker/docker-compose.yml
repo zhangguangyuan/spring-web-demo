@@ -7,4 +7,4 @@ services:
     image: springwebdemo:v1.0.0
     container_name: springwebdemo
     ports:
-      - 8081:8081
+      - 8081:8080
